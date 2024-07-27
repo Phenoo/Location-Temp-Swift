@@ -11,6 +11,14 @@
 		2A4C9F102C543D6B007614B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F0F2C543D6B007614B0 /* ContentView.swift */; };
 		2A4C9F122C543D6C007614B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C9F112C543D6C007614B0 /* Assets.xcassets */; };
 		2A4C9F152C543D6C007614B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C9F142C543D6C007614B0 /* Preview Assets.xcassets */; };
+		2A4C9F1D2C54407E007614B0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F1C2C54407E007614B0 /* Location.swift */; };
+		2A4C9F1F2C5440FD007614B0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F1E2C5440FD007614B0 /* Weather.swift */; };
+		2A4C9F222C5441E3007614B0 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F212C5441E3007614B0 /* APIEndpoint.swift */; };
+		2A4C9F252C5442AD007614B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F242C5442AD007614B0 /* Constants.swift */; };
+		2A4C9F272C544479007614B0 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F262C544479007614B0 /* GeocodingClient.swift */; };
+		2A4C9F292C546839007614B0 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F282C546839007614B0 /* WeatherClient.swift */; };
+		2A4C9F2B2C546D7D007614B0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F2A2C546D7D007614B0 /* MapView.swift */; };
+		2A4C9F2E2C546E31007614B0 /* MeasurementFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C9F2D2C546E31007614B0 /* MeasurementFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		2A4C9F0F2C543D6B007614B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A4C9F112C543D6C007614B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A4C9F142C543D6C007614B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A4C9F1C2C54407E007614B0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2A4C9F1E2C5440FD007614B0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		2A4C9F212C5441E3007614B0 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		2A4C9F242C5442AD007614B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2A4C9F262C544479007614B0 /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
+		2A4C9F282C546839007614B0 /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		2A4C9F2A2C546D7D007614B0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2A4C9F2D2C546E31007614B0 /* MeasurementFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,13 @@
 		2A4C9F0C2C543D6B007614B0 /* WeatherAppAzam */ = {
 			isa = PBXGroup;
 			children = (
+				2A4C9F2C2C546E1D007614B0 /* Extensions */,
+				2A4C9F232C5442A0007614B0 /* Utitlities */,
+				2A4C9F202C5441BB007614B0 /* Clients */,
 				2A4C9F0D2C543D6B007614B0 /* WeatherAppAzamApp.swift */,
+				2A4C9F1B2C544048007614B0 /* Models */,
 				2A4C9F0F2C543D6B007614B0 /* ContentView.swift */,
+				2A4C9F2A2C546D7D007614B0 /* MapView.swift */,
 				2A4C9F112C543D6C007614B0 /* Assets.xcassets */,
 				2A4C9F132C543D6C007614B0 /* Preview Content */,
 			);
@@ -65,6 +86,41 @@
 				2A4C9F142C543D6C007614B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A4C9F1B2C544048007614B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A4C9F1C2C54407E007614B0 /* Location.swift */,
+				2A4C9F1E2C5440FD007614B0 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A4C9F202C5441BB007614B0 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				2A4C9F212C5441E3007614B0 /* APIEndpoint.swift */,
+				2A4C9F262C544479007614B0 /* GeocodingClient.swift */,
+				2A4C9F282C546839007614B0 /* WeatherClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		2A4C9F232C5442A0007614B0 /* Utitlities */ = {
+			isa = PBXGroup;
+			children = (
+				2A4C9F242C5442AD007614B0 /* Constants.swift */,
+			);
+			path = Utitlities;
+			sourceTree = "<group>";
+		};
+		2A4C9F2C2C546E1D007614B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A4C9F2D2C546E31007614B0 /* MeasurementFormatter.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4C9F1F2C5440FD007614B0 /* Weather.swift in Sources */,
 				2A4C9F102C543D6B007614B0 /* ContentView.swift in Sources */,
+				2A4C9F272C544479007614B0 /* GeocodingClient.swift in Sources */,
+				2A4C9F1D2C54407E007614B0 /* Location.swift in Sources */,
 				2A4C9F0E2C543D6B007614B0 /* WeatherAppAzamApp.swift in Sources */,
+				2A4C9F292C546839007614B0 /* WeatherClient.swift in Sources */,
+				2A4C9F222C5441E3007614B0 /* APIEndpoint.swift in Sources */,
+				2A4C9F2E2C546E31007614B0 /* MeasurementFormatter.swift in Sources */,
+				2A4C9F2B2C546D7D007614B0 /* MapView.swift in Sources */,
+				2A4C9F252C5442AD007614B0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
